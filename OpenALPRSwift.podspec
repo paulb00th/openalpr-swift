@@ -18,5 +18,5 @@ Pod::Spec.new do |spec|
   spec.vendored_frameworks = 'lib/openalpr.framework'
   spec.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO', 'OTHER_LDFLAGS' => '-lz -llept -ltesseract_all', 'LIBRARY_SEARCH_PATHS' => '"${PODS_ROOT}/TesseractOCRiOS/TesseractOCR/lib"', 'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/OpenCV" "${PODS_ROOT}/TesseractOCRiOS/Products"', 'CLANG_WARN_DOCUMENTATION_COMMENTS' => 'NO' }
   spec.dependency 'OpenCV', '~> 3.1.0.1'
-  spec.dependency 'TesseractOCRiOS', '~> 4.0.0'
+  spec.dependency 'TesseractOCRiOS', '~> 5.0.1'
 end
